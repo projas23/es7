@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera Master's Shop - Home</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Camera Master's Shop</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+    <nav class="navbar navbar">
+        <div>
+               <a class="navbar-brand" href="index.html">
+                   <img src="images/index/logo.png" class="rounded" alt="" width="70" height="70" alt="logo">
+               </a>
+         </div>
+    </nav>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
@@ -29,18 +35,16 @@
             </li>
         </ul>
     </div>
-    <!-- Login Modal Trigger -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
+    <!--  Modal Trigger -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
 </nav>
-
-<!-- Login Modal -->
+<!--  Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                  
                 </button>
             </div>
             <div class="modal-body">
@@ -49,13 +53,18 @@
                         <label for="username">Username</label>
                         <input type="text" class="form-control" id="username" placeholder="Enter username">
                     </div>
+                
                     <div class="form-group">
                         <label for="password">Password</label>
                         <input type="password" class="form-control" id="password" placeholder="Password">
                     </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
                 </form>
+              
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Login</button>
+              </div>
         </div>
     </div>
 </div>
@@ -68,121 +77,99 @@
 
         <div class="col-md-4">
             <div class="card">
-                <img src="images/image1.jpg" class="card-img-top" alt="Camera Image">
+                <img src="images/products/image1.jpg" class="card-img-top rounded" alt="Camera Image">
                 <div class="card-body">
                     <h5 class="card-title">DSLR Camera 1</h5>
-                    <p class="card-text">High-quality DSLR camera with advanced features.</p>
+                    <p class="card-text">High-quality DSLR camera with advanced features. Great starter camera.</p>
                     <p class="card-text"><strong>Price:</strong> $999</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="card">
-                <img src="images/image2.jpg" class="card-img-top" alt="Camera Image">
+                <img src="images/products/image2.jpg" class="card-img-top rounded" alt="Camera Image">
                 <div class="card-body">
                     <h5 class="card-title">DSLR Camera 2</h5>
                     <p class="card-text">Versatile DSLR for both beginners and professionals.</p>
                     <p class="card-text"><strong>Price:</strong> $850</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4">
-            <img src="images/image3.jpg" class="card-img-top" alt="Camera Image">
-            <div class="card-body">
-                <h5 class="card-title">Film Camera 1</h5>
-                <!-- <p class="card-text">Classic film camera for the photography purist.</p>
-                <p class="card-text price"><strong>Price:</strong> $450</p> -->
-        
-                <!-- Trigger button for accordion -->
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#detailsFilmCamera1" aria-expanded="false" aria-controls="detailsFilmCamera1">
-                    View Details
-                </button>
-            </div>
-        
-            <!-- Accordion content -->
-            <div class="collapse" id="detailsFilmCamera1">
-                <div class="card card-body">
-                    <!-- Any extra details you want to show when "View Details" is clicked -->
-                    <p class="card-text">This camera comes with a 50mm lens and a carrying case.</p>
-                    <p class="card-text">More product details...</p>
+            <div class="card">
+                <img src="images/products/image3.jpg" class="card-img-top rounded" alt="Camera Image">
+                <div class="card-body">
+                    <h5 class="card-title">Film Camera 1</h5>
+                    <p class="card-text">Classic film camera for the photography purist. Beautiful images, compact camera.</p>
+                    <p class="card-text"><strong>Price:</strong> $450</p>
                 </div>
             </div>
         </div>
         
-        
-
         <div class="col-md-4 mt-4">
             <div class="card">
-                <img src="images/image4.jpg" class="card-img-top" alt="Camera Image">
+                <img src="images/products/image4.jpg" class="card-img-top rounded" alt="Camera Image">
                 <div class="card-body">
                     <h5 class="card-title">Film Camera 2</h5>
                     <p class="card-text">Retro-style film camera with modern features.</p>
                     <p class="card-text"><strong>Price:</strong> $500</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 mt-4">
             <div class="card">
-                <img src="images/image5.jpg" class="card-img-top" alt="SD Card Image">
+                <img src="images/products/image5.jpg" class="card-img-top rounded" alt="SD Card Image">
                 <div class="card-body">
                     <h5 class="card-title">SD Card 32GB</h5>
                     <p class="card-text">Fast and reliable 32GB SD card. Great for starters</p>
                     <p class="card-text"><strong>Price:</strong> $30</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 mt-4">
             <div class="card">
-                <img src="images/image6.jpg" class="card-img-top" alt="SD Card Image">
+                <img src="images/products/image6.jpg" class="card-img-top rounded" alt="SD Card Image">
                 <div class="card-body">
                     <h5 class="card-title">SD Card 64GB</h5>
                     <p class="card-text">High-capacity 64GB SD card for extended shooting.</p>
                     <p class="card-text"><strong>Price:</strong> $50</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 mt-4">
             <div class="card">
-                <img src="images/image7.jpg" class="card-img-top" alt="Accessory Image">
+                <img src="images/products/image7.jpg" class="card-img-top rounded" alt="Accessory Image">
                 <div class="card-body">
                     <h5 class="card-title">Camera Tripod</h5>
                     <p class="card-text">Sturdy and portable tripod for stable shooting.</p>
                     <p class="card-text"><strong>Price:</strong> $60</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 mt-4">
             <div class="card">
-                <img src="images/image8.jpg" class="card-img-top" alt="Accessory Image">
+                <img src="images/products/image8.jpg" class="card-img-top rounded" alt="Accessory Image">
                 <div class="card-body">
                     <h5 class="card-title">Camera Bag</h5>
                     <p class="card-text">Durable and stylish bag for camera and lenses.</p>
                     <p class="card-text"><strong>Price:</strong> $70</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 mt-4">
             <div class="card">
-                <img src="images/image8.jpg" class="card-img-top" alt="Accessory Image">
+                <img src="images/products/image9.jpg" class="card-img-top rounded" alt="Accessory Image">
                 <div class="card-body">
-                    <h5 class="card-title">Camera Bag</h5>
-                    <p class="card-text">Durable and stylish bag for camera and lenses.</p>
-                    <p class="card-text"><strong>Price:</strong> $70</p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                    <h5 class="card-title">Studio Light Kit</h5>
+                    <p class="card-text">Great for long sessions.</p>
+                    <p class="card-text"><strong>Price:</strong> $100</p>
                 </div>
             </div>
         </div>
@@ -192,12 +179,14 @@
 
 <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-        <span class="text-muted">Place footer content here.</span>
+        <a class="navbar-brand" href="#">
+            <img src="images/index/logo.png" class="rounded" alt="" width="50" height="50" alt="logo">
+        </a>
+        <span class="text-muted"><i>Camera Master's "Your one-stop shop for all your camera needs."</i></span>
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
