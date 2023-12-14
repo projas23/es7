@@ -1,7 +1,4 @@
 {
-  "dependencies": {
-    "lite-server": "^2.6.1"
-  },
   "name": "ecommerce",
   "version": "1.0.0",
   "main": "index.html",
