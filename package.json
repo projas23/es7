@@ -11,5 +11,8 @@
   ],
   "author": "pr",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
 }
